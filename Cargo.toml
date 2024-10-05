@@ -1,0 +1,13 @@
+[package]
+name = "leafwing_just_pressed_repro"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.14.2"
+lightyear = { git = "https://github.com/cBournhonesque/lightyear.git", rev = "b77f2eeb5e7751016e9a981407710c60a9c75c88", features = [
+    "leafwing",
+] }
+serde = { version = "1.0.210", features = ["derive"] }
+clap = { version = "4.5", features = ["derive"] }
+leafwing-input-manager = "0.15.0"
